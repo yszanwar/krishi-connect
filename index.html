@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAoChMN0Ym-VTJhMPBlKmG4r6EQfdVej3s",
+    authDomain: "krishi-connect.firebaseapp.com",
+    databaseURL: "https://krishi-connect.firebaseio.com",
+    projectId: "krishi-connect",
+    storageBucket: "krishi-connect.appspot.com",
+    messagingSenderId: "47822170271"
+  };
+  firebase.initializeApp(config);
+</script>
+<head>
+	<title>Krishi Connect-Every Farmer's Guide</title>
+</head>
+<body>
+
+
+<div class="header">
+  <a href="#default" class="logo">Krishi Connect</a>
+  <div class="header-right">
+    <a class="active" href="#home" id="register">Register</a>
+    <a id="Login">Login</a>
+    <a>About</a>
+    <a>हिन्दी</a>
+  </div>
+</div>
+<h1 align="center" class="para" >India's First Social Platform for Farmers</h1>
+
+<div class="hero-image" background-image="farmer.jpg">
+  <div class="hero-text">
+    <h1>For Digitally Enabled Farming of Tomorrow</h1>
+  </div>
+</div>
+<script>
+document.getElementById("register").onclick = function() {regsiter()};
+document.getElementById("Login").onclick = function() {login()};
+function regsiter() {
+    window.open('regsiter.html', '_blank');
+}
+function login() {
+    window.open('login.html', '_blank');
+}
+</script>
+
+</body>
+</html>
